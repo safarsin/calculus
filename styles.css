@@ -9,12 +9,22 @@ body {
   overflow: hidden; /* - scrollbar */
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 .calculator { 
   position: relative;
   background-color: #ecf0f1; 
   padding: 20px; 
   border-radius: 10px;
   width: 250px; 
+}
+
+.advanced-window.open + .calculator {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 #display { 
@@ -84,28 +94,22 @@ button:hover {
 } 
 
 .advanced-window {
-  position: absolute;
-  top: 0;
-  right: 97%;
   background-color: #ecf0f1; 
-  padding: 20px;  
-  width: 250px;
-  height: 358px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px; 
+  width: 0;
+  padding: 0;
+  overflow: hidden;
   opacity: 0;
-  transform: translateX(30px);
-  pointer-events: none;
-  visibility: hidden;
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  transition: width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   gap: 10px; 
+  align-content: start;
 }
 
 .advanced-window.open {
+  width: 250px;
+  padding: 20px;
   opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
-  visibility: visible;
 }

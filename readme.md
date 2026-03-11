@@ -31,11 +31,11 @@ A desktop calculator application built with Python ([pywebview](https://pywebvie
 
 ```
 calculus/
-├──   main.py          # Python backend — calculator logic & webview window
+├──  main.py          # Python backend — calculator logic & webview window
 ├──  index.html        # Calculator UI
 ├──  styles.css        # Styling
-├──   normalize.css    # CSS reset
-└──   transmitter.js   # JS bridge — sends button presses to Python
+├──  normalize.css    # CSS reset
+└──  transmitter.js   # JS bridge — sends button presses to Python
 ```
 
 ## Roadmap

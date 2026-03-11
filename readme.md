@@ -30,11 +30,12 @@ A desktop calculator application built with Python ([pywebview](https://pywebvie
 ## Project Structure
 
 ```
-main.py          # Python backend — calculator logic & webview window
-index.html       # Calculator UI
-styles.css       # Styling
-normalize.css    # CSS reset
-transmitter.js   # JS bridge — sends button presses to Python
+calculus/
+├──   main.py          # Python backend — calculator logic & webview window
+├──  index.html        # Calculator UI
+├──  styles.css        # Styling
+├──   normalize.css    # CSS reset
+└──   transmitter.js   # JS bridge — sends button presses to Python
 ```
 
 ## Roadmap

@@ -4,6 +4,12 @@ A desktop calculator application built with Python ([pywebview](https://pywebvie
 
 Fully portable: **no installation required!**
 
+## Screenshots
+
+| Standard Mode | Advanced Mode |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/81a2bdd1-7d59-47ec-9bbe-9f99a70e7b53" alt="Standard Calculator" /> | <img src="https://github.com/user-attachments/assets/664c3791-8500-42a0-8559-9e1e9b4a6b42" alt="Advanced Calculator" /> |
+
 ## Tech Stack
 
 | Layer | Technology |
